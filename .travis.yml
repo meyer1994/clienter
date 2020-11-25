@@ -21,3 +21,11 @@ script:
 after_success:
   - coverage report -m
   - bash <(curl -s https://codecov.io/bash)
+
+deploy:
+  edge: true
+  provider: pypi
+  username: meyer1994
+  skip_existing: true
+  on:
+    tags: true
