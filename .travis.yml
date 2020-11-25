@@ -1,0 +1,23 @@
+os: linux
+dist: bionic
+
+language: python
+python:
+  - '3.6'
+  - '3.7'
+  - '3.8'
+
+cache:
+  pip: true
+
+install:
+  - pip install coverage flake8
+
+script:
+  - python -m compileall -f clienter.py tests/
+  - flake8 --statistics clienter.py tests/
+  - coverage run --source=clienter -m unittest discover -vb tests/
+
+after_success:
+  - coverage report -m
+  - bash <(curl -s https://codecov.io/bash)
