@@ -1,6 +1,7 @@
 # Clienter
 
 [![Build Status](https://travis-ci.com/meyer1994/clienter.svg?branch=master)](https://travis-ci.com/meyer1994/clienter)
+[![codecov](https://codecov.io/gh/meyer1994/clienter/branch/master/graph/badge.svg?token=GDPefbNqgR)](https://codecov.io/gh/meyer1994/clienter)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 Build clients for REST APIs fast!
