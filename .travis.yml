@@ -28,4 +28,5 @@ deploy:
   username: meyer1994
   skip_existing: true
   on:
+    python: '3.8'
     tags: true
