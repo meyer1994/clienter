@@ -11,6 +11,7 @@ class FakeClient(Clienter):
     def put(self):
         """ PUT /test """
 
+
 class TestClienter(TestCase):
     def test_get(self):
         """ Will perform a GET request """

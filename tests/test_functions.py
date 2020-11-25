@@ -39,4 +39,3 @@ class TestFunctions(TestCase):
         request('1', json={})
         Fake._client.request\
             .assert_called_once_with('GET', 'base/nice/1', json={})
-
